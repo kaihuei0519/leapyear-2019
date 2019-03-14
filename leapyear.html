@@ -1,0 +1,15 @@
+<script>
+  /* 
+  閏年規則
+  1. 可以被 4整除 且 不能被 100整除。
+  2. 可以被 400 整除。
+  */
+  var year = prompt("請輸入年份");
+
+  if( year%400 == 0 || (year % 4 == 0 && year % 100 != 0 )) {
+    console.log("潤年");
+  }
+  else {
+    console.log("不為潤年");
+  }
+</script>
